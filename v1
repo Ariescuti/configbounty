@@ -1,0 +1,60 @@
+getgenv().Setting = {
+    ["Team"] = "Pirates",
+    ["Webhook"] = {
+        ["Enabled"] = true, 
+        ["Url"] = ""
+    },
+    ["Lock"] = {
+        ["Min"] = 0,
+        ["Max"] = 30000000
+    },
+    ["Mics"] = {
+        ["V4"] = true,
+        ["Skip Fruit"] = true,
+        ["FruitList"] = {"Human"}
+    },
+    ["ChatKill"] = {
+        ["Enabled"] = false,
+        ["List"] = {""},
+    },
+    ["Another"] = {
+        ["Auto V3"] = true,
+        ["Auto V4"] = true,
+        ["Run If Low Health"] = true,
+        ["Max Health"] = "3500",
+        ["Remove Terrain"] = false,
+        ["White Screen"] = false
+    },
+    ["Melee"] = {
+        ["Enable"] = true,
+        ["Delay"] = 2.5,
+        ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
+        ["X"] = {["Enable"] = true, ["HoldTime"] = 0},
+        ["C"] = {["Enable"] = true, ["HoldTime"] = 0},
+        ["V"] = {["Enable"] = true, ["HoldTime"] = 0} -- BlackLeg | Death Step User
+    },
+    ["Fruit"] = {
+        ["Enable"] = true,
+        ["Delay"] = 2,
+        ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
+        ["X"] = {["Enable"] = true, ["HoldTime"] = 0},
+        ["C"] = {["Enable"] = true, ["HoldTime"] = 0},
+        ["V"] = {["Enable"] = true, ["HoldTime"] = 0},
+        ["F"] = {["Enable"] = true, ["HoldTime"] = 0}
+    },
+    ["Sword"] = {
+        ["Enable"] = true,
+        ["Delay"] = 1,
+        ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
+        ["X"] = {["Enable"] = true, ["HoldTime"] = 0}
+    },
+    ["Gun"] = {
+        ["Enable"] = true,
+        ["Gun Method"] = false, 
+        ["Delay"] = 1.75,
+        ["Z"] = {["Enable"] = true, ["HoldTime"] = 0},
+        ["X"] = {["Enable"] = true, ["HoldTime"] = 0}
+    }
+}
+_G.Key = ""
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ariescuti/AutoBounty/main/v1"))(); 
